@@ -1,0 +1,43 @@
+<h1>Contact🚀</h1>
+
+<%# <% members = ["thanh", "dimitri", "germain", "damien", "julien"] %>
+
+<h2>Meet our team</h2>
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
+
+<h2>Meet our team</h2>
+<ol>
+  <li>Thanh</li>
+  <li>Dimitri</li>
+  <li>Germain</li>
+  <li>Damien</li>
+  <li>Julien</li>
+</ol>
+
+
+<a href="http://127.0.0.1:3000/">ANCHOR_TEXT</a>
+
+<br>
+
+
+<%= link_to "ANCHOR_TEXT", about_path %>
+
+
+
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+
+<br>
+
+<input type="text"
+  name="member"
+  value="<%= params[:member] %>"
+  placeholder="Who are you looking for?"
+>
